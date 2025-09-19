@@ -42,7 +42,7 @@ func PrintArticles(newsdata models.NewsData, count int, source string) {
 	filepath := filepath.Join(outputDir, filename)
 
 	// Open file in append mode (create if not exists)
-	f, err := os.OpenFile(filepath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	f, err := os.OpenFile(filepath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
 	if err != nil {
 		fmt.Printf("Error opening file %s: %v\n", filepath, err)
 		return

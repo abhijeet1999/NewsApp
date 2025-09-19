@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"sync"
@@ -18,6 +19,7 @@ func main() {
 	fmt.Println("Welcome To News App")
 	fmt.Println("*****************************************************************")
 
+	// Ensure input.txt exists
 	file, ferr := os.Open("input.txt")
 	if ferr != nil {
 		panic(ferr)
@@ -52,6 +54,9 @@ func main() {
 			existing, _ := models.GetNewsBySearchKey(topic)
 			length := len(existing.Articles)
 
+			// Ensure SearchKey is always set (fixes "unknown.txt")
+			existing.SearchKey = topic
+
 			// If DB has enough
 			if length >= count {
 				results <- models.Result{Topic: topic, Data: existing, Count: count, Source: "Database"}
@@ -59,9 +64,7 @@ func main() {
 			}
 
 			// Fetch missing articles from API
-			missing := count
-
-			newArticles := routes.GetNewsapi(topic, missing, days)
+			newArticles := routes.GetNewsapi(topic, count, days)
 
 			// Merge unique articles from API
 			urlMap := make(map[string]bool)
@@ -92,6 +95,8 @@ func main() {
 				source = "Combined"
 			}
 
+			// Always assign topic
+			existing.SearchKey = topic
 			results <- models.Result{Topic: topic, Data: existing, Count: finalCount, Source: source}
 
 		}(topic, days, count)
@@ -104,10 +109,21 @@ func main() {
 		close(results)
 	}()
 
-	// Write results to files in /output/
+	// Ensure /output exists
+	outputDir := "output"
+	if err := os.MkdirAll(outputDir, os.ModePerm); err != nil {
+		fmt.Printf("Error creating output directory: %v\n", err)
+		return
+	}
+
+	// Write results to files
 	for res := range results {
+		// Fallback if still empty
+		if strings.TrimSpace(res.Data.SearchKey) == "" {
+			res.Data.SearchKey = "unknown"
+		}
 		utils.PrintArticles(*res.Data, res.Count, res.Source)
 	}
 
-	fmt.Println("All tasks complete.")
+	fmt.Println("All tasks complete. Results are stored in", filepath.Join(".", outputDir))
 }

@@ -1,3 +1,2 @@
-Apple,10,20
-Mango,44,20
-
+Apple,2,2
+tesla,2,5
