@@ -1,0 +1,64 @@
+**************************************************************
+Timestamp: 2025-09-19 19:43:25
+Results for: tesla                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Tesla is updating its passenger-trapping door handles
+    Author      : Jess Weatherbed
+    Description : Tesla is redesigning the electronic door handles that are currently under investigation for trapping people inside their vehicles. In an Interview with Bloomberg, Tesla design chief Franz von Holzhausen said that the company is looking to make the handles mor…
+    URL         : https://www.theverge.com/news/780744/tesla-redesigning-passenger-trapping-door-handles
+
+[2] Title       : Tesla agrees to settle another wrongful death lawsuit involving Autopilot
+    Author      : Andrew J. Hawkins
+    Description : Tesla has agreed to settle a wrongful death lawsuit stemming from a fatal crash in 2019. It’s the latest case to involve Autopilot, Tesla’s advanced driver assist system that the company claims will serve as the foundation for its future in self-driving cars …
+    URL         : https://www.theverge.com/news/779850/tesla-settle-wrongful-death-autopilot-maldonado
+
+[3] Title       : Tesla agrees to settle another wrongful death lawsuit involving Autopilot
+    Author      : Andrew J. Hawkins
+    Description : Tesla has agreed to settle a wrongful death lawsuit stemming from a fatal crash in 2019. It’s the latest case to involve Autopilot, Tesla’s advanced driver assist system that the company claims will serve as the foundation for its future in self-driving cars …
+    URL         : https://www.theverge.com/news/779850/tesla-settle-wrongful-death-autopilot-maldonado
+
+[4] Title       : Body found in car registered to D4vd identified as missing teen
+    Author      : 
+    Description : Authorities say the cause and time of the 15-year-old girl's death are still unknown.
+    URL         : https://www.bbc.com/news/articles/ceq27zdzgrqo
+
+[5] Title       : Tesla is redesigning its door handles after some parents reported children getting trapped inside
+    Author      : Tom Carter
+    Description : Tesla does build its cars with a manual door release in case of emergencies, but owners have complained that these can be hard to find.
+    URL         : https://www.businessinsider.com/tesla-redesigning-door-handles-chief-designer-kids-trapped-inside-2025-9
+
+**************************** END ****************************
+
+**************************************************************
+Timestamp: 2025-09-20 11:41:48
+Results for: tesla                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Tesla is updating its passenger-trapping door handles
+    Author      : Jess Weatherbed
+    Description : Tesla is redesigning the electronic door handles that are currently under investigation for trapping people inside their vehicles. In an Interview with Bloomberg, Tesla design chief Franz von Holzhausen said that the company is looking to make the handles mor…
+    URL         : https://www.theverge.com/news/780744/tesla-redesigning-passenger-trapping-door-handles
+
+[2] Title       : Tesla agrees to settle another wrongful death lawsuit involving Autopilot
+    Author      : Andrew J. Hawkins
+    Description : Tesla has agreed to settle a wrongful death lawsuit stemming from a fatal crash in 2019. It’s the latest case to involve Autopilot, Tesla’s advanced driver assist system that the company claims will serve as the foundation for its future in self-driving cars …
+    URL         : https://www.theverge.com/news/779850/tesla-settle-wrongful-death-autopilot-maldonado
+
+[3] Title       : Tesla agrees to settle another wrongful death lawsuit involving Autopilot
+    Author      : Andrew J. Hawkins
+    Description : Tesla has agreed to settle a wrongful death lawsuit stemming from a fatal crash in 2019. It’s the latest case to involve Autopilot, Tesla’s advanced driver assist system that the company claims will serve as the foundation for its future in self-driving cars …
+    URL         : https://www.theverge.com/news/779850/tesla-settle-wrongful-death-autopilot-maldonado
+
+[4] Title       : Body found in car registered to D4vd identified as missing teen
+    Author      : 
+    Description : Authorities say the cause and time of the 15-year-old girl's death are still unknown.
+    URL         : https://www.bbc.com/news/articles/ceq27zdzgrqo
+
+[5] Title       : Tesla is redesigning its door handles after some parents reported children getting trapped inside
+    Author      : Tom Carter
+    Description : Tesla does build its cars with a manual door release in case of emergencies, but owners have complained that these can be hard to find.
+    URL         : https://www.businessinsider.com/tesla-redesigning-door-handles-chief-designer-kids-trapped-inside-2025-9
+
+**************************** END ****************************
+

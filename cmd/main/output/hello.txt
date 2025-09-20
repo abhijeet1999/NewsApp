@@ -1,0 +1,32 @@
+**************************************************************
+Timestamp: 2025-09-20 11:42:08
+Results for: hello                | Showing 5 articles | Source: API
+**************************************************************
+
+[1] Title       : It’s Time for a New Two-Party System
+    Author      : Garry Kasparov
+    Description : Bret Stephens says we need a new liberal party, and it’s not what you think.
+    URL         : https://www.theatlantic.com/podcasts/archive/2025/09/its-time-for-a-new-two-party-system/684257/
+
+[2] Title       : Mike Pence: Donald Trump Has Not ‘Changed the Republican Party’
+    Author      : Annie Joy Williams, Elias Wachtel
+    Description : The former vice president spoke at The Atlantic Festival about the president he once served.
+    URL         : https://www.theatlantic.com/politics/archive/2025/09/mike-pence-conservatism-free-speech-kimmel/684260/
+
+[3] Title       : tldraw SDK 4.0
+    Author      : 
+    Description : The tldraw SDK provides tools, services, and APIs to build beautiful whiteboards and infinite canvas applications with real-time collaboration and a powerful React-based canvas.
+    URL         : https://tldraw.dev/blog/tldraw-sdk-4-0
+
+[4] Title       : A Conversation Between Kate Middleton and Melania Trump, Probably
+    Author      : writer
+    Description : It’s like my brain wants to think these photos are AI, but knows it’s not.
+    URL         : https://www.jezebel.com/a-conversation-between-kate-middleton-and-melania-trump-probably
+
+[5] Title       : Man pulls off daring scuba heist of Disney paddleboat restaurant, netting $10K-$20K...
+    Author      : Aaron Cohen
+    Description : Man pulls off daring scuba heist of Disney paddleboat restaurant, netting $10K-$20K before successfully escaping into the water fr
+    URL         : https://kottke.org/25/09/0047533-man-pulls-off-daring-scub
+
+**************************** END ****************************
+

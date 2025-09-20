@@ -12,7 +12,7 @@ import (
 	"github.com/abhijeet1999/NewsApp/pkg/models"
 )
 
-func GetNewsapi(searchTopic string, count int, daysAgo int) models.NewsData {
+func GetNewsapi(searchTopic string, count int, daysAgo int, apiKey string) models.NewsData {
 	fmt.Println()
 	fmt.Println("Fetching articles count:", count)
 	baseURL := "https://newsapi.org/v2/everything"
@@ -25,7 +25,7 @@ func GetNewsapi(searchTopic string, count int, daysAgo int) models.NewsData {
 	params.Add("q", searchTopic)
 	params.Add("from", fromDate)
 	params.Add("sortBy", "popularity")
-	params.Add("apiKey", "")
+	params.Add("apiKey", apiKey)
 
 	fullURL := fmt.Sprintf("%s?%s", baseURL, params.Encode())
 

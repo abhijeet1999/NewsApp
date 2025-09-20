@@ -15,6 +15,11 @@ import (
 )
 
 func main() {
+	apiKey := os.Getenv("NEWS_API_KEY")
+	if apiKey == "" {
+		panic("News api key is not set")
+	}
+
 	fmt.Println("*****************************************************************")
 	fmt.Println("Welcome To News App")
 	fmt.Println("*****************************************************************")
@@ -64,7 +69,7 @@ func main() {
 			}
 
 			// Fetch missing articles from API
-			newArticles := routes.GetNewsapi(topic, count, days)
+			newArticles := routes.GetNewsapi(topic, count, days, apiKey)
 
 			// Merge unique articles from API
 			urlMap := make(map[string]bool)
