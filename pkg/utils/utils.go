@@ -41,10 +41,16 @@ func PrintArticles(newsdata models.NewsData, count int, source string) {
 	filename := strings.ReplaceAll(strings.ToLower(newsdata.SearchKey), " ", "_") + ".txt"
 	filepath := filepath.Join(outputDir, filename)
 
-	// Open file in append mode (create if not exists)
-	f, err := os.OpenFile(filepath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+	// Read existing content if file exists
+	var existingContent []byte
+	if _, err := os.Stat(filepath); err == nil {
+		existingContent, _ = os.ReadFile(filepath)
+	}
+
+	// Create new file and write new content first
+	f, err := os.Create(filepath)
 	if err != nil {
-		fmt.Printf("Error opening file %s: %v\n", filepath, err)
+		fmt.Printf("Error creating file %s: %v\n", filepath, err)
 		return
 	}
 	defer f.Close()
@@ -69,4 +75,10 @@ func PrintArticles(newsdata models.NewsData, count int, source string) {
 
 	// Footer
 	fmt.Fprintf(f, "**************************** END ****************************\n\n")
+
+	// Append existing content after new content
+	if len(existingContent) > 0 {
+		fmt.Fprintf(f, "--- PREVIOUS RESULTS ---\n\n")
+		f.Write(existingContent)
+	}
 }
