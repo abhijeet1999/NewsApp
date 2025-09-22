@@ -5,7 +5,7 @@ import (
 
 	"github.com/abhijeet1999/NewsApp/pkg/config"
 	"github.com/jinzhu/gorm"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
 )
 
 var db *gorm.DB
