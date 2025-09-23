@@ -41,13 +41,15 @@ func PrintArticles(newsdata models.NewsData, count int, source string) {
 	filename := strings.ReplaceAll(strings.ToLower(newsdata.SearchKey), " ", "_") + ".txt"
 	filepath := filepath.Join(outputDir, filename)
 
-	// Read existing content if file exists
+	// Read any existing content so we can prepend the latest results
 	var existingContent []byte
-	if _, err := os.Stat(filepath); err == nil {
-		existingContent, _ = os.ReadFile(filepath)
+	if _, statErr := os.Stat(filepath); statErr == nil {
+		if content, readErr := os.ReadFile(filepath); readErr == nil {
+			existingContent = content
+		}
 	}
 
-	// Create new file and write new content first
+	// Recreate the file and write the latest block first
 	f, err := os.Create(filepath)
 	if err != nil {
 		fmt.Printf("Error creating file %s: %v\n", filepath, err)
@@ -76,7 +78,7 @@ func PrintArticles(newsdata models.NewsData, count int, source string) {
 	// Footer
 	fmt.Fprintf(f, "**************************** END ****************************\n\n")
 
-	// Append existing content after new content
+	// If there was existing content, append it below with a separator
 	if len(existingContent) > 0 {
 		fmt.Fprintf(f, "--- PREVIOUS RESULTS ---\n\n")
 		f.Write(existingContent)

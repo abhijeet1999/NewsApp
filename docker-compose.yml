@@ -23,7 +23,7 @@ services:
       - sqlite-data:/data
     depends_on:
       - sqlite-db
-    restart: unless-stopped
+    restart: no
     networks:
       - newsapp-network
 

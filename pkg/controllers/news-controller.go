@@ -29,35 +29,16 @@ func CreateBook(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func SaveNews(searchKey string, articles []models.Article) {
-	// Check if record already exists
-	existing, _ := models.GetNewsBySearchKey(searchKey)
-
-	if existing.ID != 0 {
-		// Existing record: append only new articles
-		var added int
-		for _, article := range articles {
-			var found models.Article
-			err := models.DB().
-				Where("id = ? AND url = ?", existing.ID, article.URL).
-				First(&found).Error
-
-			if err != nil { // not found, so create
-				article.NewsDataID = existing.ID
-				models.DB().Create(&article)
-				added++
-			}
-		}
-
-		fmt.Printf("Added %d new articles for %s (existing record)\n", added, searchKey)
-
-	} else {
-		// Create new record
-		news := models.NewsData{
-			SearchKey: searchKey,
-			Articles:  articles,
-		}
-		news.CreateNews()
-		fmt.Printf("Saved %d new articles for %s (new record)\n", len(articles), searchKey)
+// SaveNewsWithUpsert uses UPSERT approach with UNIQUE constraints to prevent duplicates
+func SaveNewsWithUpsert(searchKey string, articles []models.Article) {
+	// Use the new UPSERT function that handles UNIQUE constraints
+	err := models.SaveArticlesWithUpsert(searchKey, articles)
+	if err != nil {
+		fmt.Printf("Error saving articles for %s: %v\n", searchKey, err)
 	}
+}
+
+// SaveNews is the legacy function - now uses UPSERT approach
+func SaveNews(searchKey string, articles []models.Article) {
+	SaveNewsWithUpsert(searchKey, articles)
 }
