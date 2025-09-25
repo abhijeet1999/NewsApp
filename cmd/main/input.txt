@@ -1,2 +1,5 @@
-kiwi,2,2
-kiwi,2,2
+tesla,2,2
+tesla,2,2
+Apple,1,2
+Apple,2,5
+Apple,3,4

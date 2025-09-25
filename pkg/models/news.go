@@ -2,6 +2,7 @@ package models
 
 import (
 	"fmt"
+	"strings"
 	"sync"
 
 	"github.com/abhijeet1999/NewsApp/pkg/config"
@@ -53,32 +54,36 @@ func GetTopicMutex(topic string) *sync.Mutex {
 }
 
 func GetNewsBySearchKey(searchKey string) (*NewsData, *gorm.DB) {
+	// Normalize to lowercase for consistent lookups
+	normalized := strings.ToLower(searchKey)
 	var getNews NewsData
-	result := db.Preload("Articles").Where("searchkey = ?", searchKey).First(&getNews)
+	result := db.Preload("Articles").Where("searchkey = ?", normalized).First(&getNews)
 
 	return &getNews, result
 }
 
 // UpsertNewsData creates or updates NewsData with UPSERT logic
 func UpsertNewsData(searchKey string) (*NewsData, error) {
+	// Normalize to lowercase so the DB key is case-insensitive across inputs
+	normalized := strings.ToLower(searchKey)
 	var newsData NewsData
 
 	// Try to find existing record
-	result := db.Where("searchkey = ?", searchKey).First(&newsData)
+	result := db.Where("searchkey = ?", normalized).First(&newsData)
 
 	if result.Error != nil {
 		if result.Error == gorm.ErrRecordNotFound {
 			// Create new record
-			newsData = NewsData{SearchKey: searchKey}
+			newsData = NewsData{SearchKey: normalized}
 			if err := db.Create(&newsData).Error; err != nil {
 				return nil, err
 			}
-			fmt.Printf("Created new topic: %s\n", searchKey)
+			fmt.Printf("Created new topic: %s\n", normalized)
 		} else {
 			return nil, result.Error
 		}
 	} else {
-		fmt.Printf("Found existing topic: %s\n", searchKey)
+		fmt.Printf("Found existing topic: %s\n", newsData.SearchKey)
 	}
 
 	return &newsData, nil

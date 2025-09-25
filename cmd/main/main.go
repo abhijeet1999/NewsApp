@@ -46,7 +46,7 @@ func main() {
 			continue
 		}
 
-		topic := strings.TrimSpace(items[0])
+		topic := strings.ToLower(strings.TrimSpace(items[0]))
 		days, _ := strconv.Atoi(strings.TrimSpace(items[1]))
 		count, _ := strconv.Atoi(strings.TrimSpace(items[2]))
 

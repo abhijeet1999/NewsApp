@@ -58,15 +58,21 @@ func PrintArticles(newsdata models.NewsData, count int, source string) {
 	defer f.Close()
 	timestamp := time.Now().Format("2006-01-02 15:04:05")
 
+	// Determine how many articles will actually be printed
+	displayedCount := count
+	if len(newsdata.Articles) < displayedCount {
+		displayedCount = len(newsdata.Articles)
+	}
+
 	// Write header with source
 	fmt.Fprintf(f, "**************************************************************\n")
 	fmt.Fprintf(f, "Timestamp: %s\n", timestamp)
-	fmt.Fprintf(f, "Results for: %-20s | Showing %d articles | Source: %s\n", newsdata.SearchKey, count, source)
+	fmt.Fprintf(f, "Results for: %-20s | Showing %d articles | Source: %s\n", newsdata.SearchKey, displayedCount, source)
 	fmt.Fprintf(f, "**************************************************************\n\n")
 
 	// Write each article
 	for i, article := range newsdata.Articles {
-		if i >= count {
+		if i >= displayedCount {
 			break
 		}
 		fmt.Fprintf(f, "[%d] Title       : %s\n", i+1, article.Title)

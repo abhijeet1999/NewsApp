@@ -16,21 +16,78 @@ The application uses a Docker-based architecture with dedicated services:
 - Docker and Docker Compose installed
 - NewsAPI key from [https://newsapi.org/](https://newsapi.org/)
 
-### Setup and Run
+### How to Run (Simplest, no build)
+If you already have the prebuilt image loaded (via `docker load -i newsapp-image.tar`), run it like this:
+
+```bash
+# 1) Prepare a working folder
+mkdir -p ~/newsapp-run && cd ~/newsapp-run
+
+# 2) Create input and output
+cat > input.txt << 'EOF'
+kiwi,2,2
+kiwi,2,2
+EOF
+mkdir -p output
+
+# 3) Set your API key
+export NEWS_API_KEY="YOUR_NEWS_API_KEY"
+
+# 4) Create the SQLite volume and DB file (one-time init)
+docker run --rm -v newsapp_sqlite-data:/data alpine sh -c "mkdir -p /data && touch /data/newsapp.db"
+
+# 5) Run the app
+docker run --rm \
+  -e NEWS_API_KEY="$NEWS_API_KEY" \
+  -e SQLITE_DB_PATH=/data/newsapp.db \
+  -v "$(pwd)/input.txt:/root/input.txt:ro" \
+  -v "$(pwd)/output:/root/output" \
+  -v newsapp_sqlite-data:/data \
+  newsapp-newsapp:latest
+
+# 6) Check results
+ls -la output
+```
+
+### Setup and Run (with Compose)
 
 1. **Set up environment variables:**
    ```bash
    export NEWS_API_KEY="your_news_api_key_here"
    ```
 
-2. **Build and run all services:**
-   ```bash
-   docker-compose up --build
+2. **Run services using the prebuilt image:**
+   ```yaml
+   # docker-compose.yml (runtime-only)
+   services:
+     sqlite-db:
+       image: alpine:latest
+       volumes:
+         - sqlite-data:/data
+       command: ["sh", "-c", "mkdir -p /data && touch /data/newsapp.db && tail -f /dev/null"]
+       restart: no
+
+     newsapp:
+       image: newsapp-newsapp:latest
+       environment:
+         - NEWS_API_KEY=${NEWS_API_KEY}
+         - SQLITE_DB_PATH=/data/newsapp.db
+       volumes:
+         - ./cmd/main/input.txt:/root/input.txt:ro
+         - ./cmd/main/output:/root/output
+         - sqlite-data:/data
+       depends_on:
+         - sqlite-db
+       restart: no
+
+   volumes:
+     sqlite-data:
+       driver: local
    ```
 
-3. **Run in detached mode:**
    ```bash
-   docker-compose up -d --build
+   # From the project root (or adapt paths if running elsewhere)
+   docker-compose up
    ```
 
 ## 📁 Project Structure
