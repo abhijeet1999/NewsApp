@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  sqlite-db:
+    image: alpine:latest
+    container_name: sqlite-db
+    volumes:
+      - sqlite-data:/data
+    command: ["sh", "-c", "mkdir -p /data && touch /data/newsapp.db && tail -f /dev/null"]
+    networks:
+      - newsapp-network
+    restart: unless-stopped
+
+  newsapp:
+    build: .
+    container_name: newsapp
+    environment:
+      - NEWS_API_KEY=${NEWS_API_KEY}
+      - SQLITE_DB_PATH=/data/newsapp.db
+    volumes:
+      - ./cmd/main/input.txt:/root/input.txt:ro
+      - ./cmd/main/output:/root/output
+      - sqlite-data:/data
+    depends_on:
+      - sqlite-db
+    restart: no
+    networks:
+      - newsapp-network
+
+networks:
+  newsapp-network:
+    driver: bridge
+
+volumes:
+  sqlite-data:
+    driver: local

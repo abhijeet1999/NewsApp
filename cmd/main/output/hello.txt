@@ -1,0 +1,270 @@
+**************************************************************
+Timestamp: 2025-09-22 02:18:48
+Results for: hello                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Say Hello to the 2025 Ig Nobel Prize Winners
+    Author      : Jennifer Ouellette, Ars Technica
+    Description : The annual award ceremony features miniature operas, scientific demos, and 24/7 lectures.
+    URL         : https://www.wired.com/story/say-hello-to-the-2025-ig-nobel-prize-winners/
+
+[2] Title       : Computer Has One Instruction, Many Transistors
+    Author      : Bryan Cockfield
+    Description : There’s always some debate around what style of architecture is best for certain computing applications, with some on the RISC side citing performance per watt and some on the CISC side citin…
+    URL         : https://hackaday.com/2025/09/20/computer-has-one-instruction-many-transistors/
+
+[3] Title       : WWE Wrestlepalooza live updates and results: John Cena vs. Brock Lesnar up first
+    Author      : ESPN Staff
+    Description : WWE heads to Indianapolis for its first Premium Live Event on ESPN Unlimited. Seth Rollins, Cody Rhodes and more join Cena and Lesnar on the card.
+    URL         : https://www.espn.com/wwe/story/_/id/46307887/wwe-wrestlepalooza-john-cena-vs-brock-lesnar-first
+
+[4] Title       : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS...
+    Author      : Jason Kottke
+    Description : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS 26 / Liquid Glass is terrible: incoherent, ugly, and di
+    URL         : https://kottke.org/25/09/0047552-im-usually-pretty-go-with
+
+[5] Title       : Los jugadores de Warhammer 40K están construyendo sus naves en No Man's Sky y el resultado son bestialidades absurdas
+    Author      : Alberto Martín
+    Description : Nada escapa a la mirada de Warhammer 40K. Si algo existe, está en su universo y si algo de su universo puede llegar a otro, acaba llegando gracias a los fans. Así que nadie puede extrañarse de que la influencia del Emperador y el Imperio de la Humanidad se ha…
+    URL         : https://www.vidaextra.com/accion/jugadores-warhammer-40k-estan-construyendo-sus-naves-no-mans-sky-resultado-bestialidades-absurdas
+
+**************************** END ****************************
+
+--- PREVIOUS RESULTS ---
+
+**************************************************************
+Timestamp: 2025-09-22 02:18:42
+Results for: hello                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Say Hello to the 2025 Ig Nobel Prize Winners
+    Author      : Jennifer Ouellette, Ars Technica
+    Description : The annual award ceremony features miniature operas, scientific demos, and 24/7 lectures.
+    URL         : https://www.wired.com/story/say-hello-to-the-2025-ig-nobel-prize-winners/
+
+[2] Title       : Computer Has One Instruction, Many Transistors
+    Author      : Bryan Cockfield
+    Description : There’s always some debate around what style of architecture is best for certain computing applications, with some on the RISC side citing performance per watt and some on the CISC side citin…
+    URL         : https://hackaday.com/2025/09/20/computer-has-one-instruction-many-transistors/
+
+[3] Title       : WWE Wrestlepalooza live updates and results: John Cena vs. Brock Lesnar up first
+    Author      : ESPN Staff
+    Description : WWE heads to Indianapolis for its first Premium Live Event on ESPN Unlimited. Seth Rollins, Cody Rhodes and more join Cena and Lesnar on the card.
+    URL         : https://www.espn.com/wwe/story/_/id/46307887/wwe-wrestlepalooza-john-cena-vs-brock-lesnar-first
+
+[4] Title       : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS...
+    Author      : Jason Kottke
+    Description : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS 26 / Liquid Glass is terrible: incoherent, ugly, and di
+    URL         : https://kottke.org/25/09/0047552-im-usually-pretty-go-with
+
+[5] Title       : Los jugadores de Warhammer 40K están construyendo sus naves en No Man's Sky y el resultado son bestialidades absurdas
+    Author      : Alberto Martín
+    Description : Nada escapa a la mirada de Warhammer 40K. Si algo existe, está en su universo y si algo de su universo puede llegar a otro, acaba llegando gracias a los fans. Así que nadie puede extrañarse de que la influencia del Emperador y el Imperio de la Humanidad se ha…
+    URL         : https://www.vidaextra.com/accion/jugadores-warhammer-40k-estan-construyendo-sus-naves-no-mans-sky-resultado-bestialidades-absurdas
+
+**************************** END ****************************
+
+--- PREVIOUS RESULTS ---
+
+**************************************************************
+Timestamp: 2025-09-22 02:18:38
+Results for: hello                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Say Hello to the 2025 Ig Nobel Prize Winners
+    Author      : Jennifer Ouellette, Ars Technica
+    Description : The annual award ceremony features miniature operas, scientific demos, and 24/7 lectures.
+    URL         : https://www.wired.com/story/say-hello-to-the-2025-ig-nobel-prize-winners/
+
+[2] Title       : Computer Has One Instruction, Many Transistors
+    Author      : Bryan Cockfield
+    Description : There’s always some debate around what style of architecture is best for certain computing applications, with some on the RISC side citing performance per watt and some on the CISC side citin…
+    URL         : https://hackaday.com/2025/09/20/computer-has-one-instruction-many-transistors/
+
+[3] Title       : WWE Wrestlepalooza live updates and results: John Cena vs. Brock Lesnar up first
+    Author      : ESPN Staff
+    Description : WWE heads to Indianapolis for its first Premium Live Event on ESPN Unlimited. Seth Rollins, Cody Rhodes and more join Cena and Lesnar on the card.
+    URL         : https://www.espn.com/wwe/story/_/id/46307887/wwe-wrestlepalooza-john-cena-vs-brock-lesnar-first
+
+[4] Title       : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS...
+    Author      : Jason Kottke
+    Description : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS 26 / Liquid Glass is terrible: incoherent, ugly, and di
+    URL         : https://kottke.org/25/09/0047552-im-usually-pretty-go-with
+
+[5] Title       : Los jugadores de Warhammer 40K están construyendo sus naves en No Man's Sky y el resultado son bestialidades absurdas
+    Author      : Alberto Martín
+    Description : Nada escapa a la mirada de Warhammer 40K. Si algo existe, está en su universo y si algo de su universo puede llegar a otro, acaba llegando gracias a los fans. Así que nadie puede extrañarse de que la influencia del Emperador y el Imperio de la Humanidad se ha…
+    URL         : https://www.vidaextra.com/accion/jugadores-warhammer-40k-estan-construyendo-sus-naves-no-mans-sky-resultado-bestialidades-absurdas
+
+**************************** END ****************************
+
+--- PREVIOUS RESULTS ---
+
+**************************************************************
+Timestamp: 2025-09-22 02:18:36
+Results for: hello                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Say Hello to the 2025 Ig Nobel Prize Winners
+    Author      : Jennifer Ouellette, Ars Technica
+    Description : The annual award ceremony features miniature operas, scientific demos, and 24/7 lectures.
+    URL         : https://www.wired.com/story/say-hello-to-the-2025-ig-nobel-prize-winners/
+
+[2] Title       : Computer Has One Instruction, Many Transistors
+    Author      : Bryan Cockfield
+    Description : There’s always some debate around what style of architecture is best for certain computing applications, with some on the RISC side citing performance per watt and some on the CISC side citin…
+    URL         : https://hackaday.com/2025/09/20/computer-has-one-instruction-many-transistors/
+
+[3] Title       : WWE Wrestlepalooza live updates and results: John Cena vs. Brock Lesnar up first
+    Author      : ESPN Staff
+    Description : WWE heads to Indianapolis for its first Premium Live Event on ESPN Unlimited. Seth Rollins, Cody Rhodes and more join Cena and Lesnar on the card.
+    URL         : https://www.espn.com/wwe/story/_/id/46307887/wwe-wrestlepalooza-john-cena-vs-brock-lesnar-first
+
+[4] Title       : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS...
+    Author      : Jason Kottke
+    Description : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS 26 / Liquid Glass is terrible: incoherent, ugly, and di
+    URL         : https://kottke.org/25/09/0047552-im-usually-pretty-go-with
+
+[5] Title       : Los jugadores de Warhammer 40K están construyendo sus naves en No Man's Sky y el resultado son bestialidades absurdas
+    Author      : Alberto Martín
+    Description : Nada escapa a la mirada de Warhammer 40K. Si algo existe, está en su universo y si algo de su universo puede llegar a otro, acaba llegando gracias a los fans. Así que nadie puede extrañarse de que la influencia del Emperador y el Imperio de la Humanidad se ha…
+    URL         : https://www.vidaextra.com/accion/jugadores-warhammer-40k-estan-construyendo-sus-naves-no-mans-sky-resultado-bestialidades-absurdas
+
+**************************** END ****************************
+
+--- PREVIOUS RESULTS ---
+
+**************************************************************
+Timestamp: 2025-09-22 02:18:36
+Results for: hello                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Say Hello to the 2025 Ig Nobel Prize Winners
+    Author      : Jennifer Ouellette, Ars Technica
+    Description : The annual award ceremony features miniature operas, scientific demos, and 24/7 lectures.
+    URL         : https://www.wired.com/story/say-hello-to-the-2025-ig-nobel-prize-winners/
+
+[2] Title       : Computer Has One Instruction, Many Transistors
+    Author      : Bryan Cockfield
+    Description : There’s always some debate around what style of architecture is best for certain computing applications, with some on the RISC side citing performance per watt and some on the CISC side citin…
+    URL         : https://hackaday.com/2025/09/20/computer-has-one-instruction-many-transistors/
+
+[3] Title       : WWE Wrestlepalooza live updates and results: John Cena vs. Brock Lesnar up first
+    Author      : ESPN Staff
+    Description : WWE heads to Indianapolis for its first Premium Live Event on ESPN Unlimited. Seth Rollins, Cody Rhodes and more join Cena and Lesnar on the card.
+    URL         : https://www.espn.com/wwe/story/_/id/46307887/wwe-wrestlepalooza-john-cena-vs-brock-lesnar-first
+
+[4] Title       : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS...
+    Author      : Jason Kottke
+    Description : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS 26 / Liquid Glass is terrible: incoherent, ugly, and di
+    URL         : https://kottke.org/25/09/0047552-im-usually-pretty-go-with
+
+[5] Title       : Los jugadores de Warhammer 40K están construyendo sus naves en No Man's Sky y el resultado son bestialidades absurdas
+    Author      : Alberto Martín
+    Description : Nada escapa a la mirada de Warhammer 40K. Si algo existe, está en su universo y si algo de su universo puede llegar a otro, acaba llegando gracias a los fans. Así que nadie puede extrañarse de que la influencia del Emperador y el Imperio de la Humanidad se ha…
+    URL         : https://www.vidaextra.com/accion/jugadores-warhammer-40k-estan-construyendo-sus-naves-no-mans-sky-resultado-bestialidades-absurdas
+
+**************************** END ****************************
+
+--- PREVIOUS RESULTS ---
+
+**************************************************************
+Timestamp: 2025-09-22 02:18:35
+Results for: hello                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Say Hello to the 2025 Ig Nobel Prize Winners
+    Author      : Jennifer Ouellette, Ars Technica
+    Description : The annual award ceremony features miniature operas, scientific demos, and 24/7 lectures.
+    URL         : https://www.wired.com/story/say-hello-to-the-2025-ig-nobel-prize-winners/
+
+[2] Title       : Computer Has One Instruction, Many Transistors
+    Author      : Bryan Cockfield
+    Description : There’s always some debate around what style of architecture is best for certain computing applications, with some on the RISC side citing performance per watt and some on the CISC side citin…
+    URL         : https://hackaday.com/2025/09/20/computer-has-one-instruction-many-transistors/
+
+[3] Title       : WWE Wrestlepalooza live updates and results: John Cena vs. Brock Lesnar up first
+    Author      : ESPN Staff
+    Description : WWE heads to Indianapolis for its first Premium Live Event on ESPN Unlimited. Seth Rollins, Cody Rhodes and more join Cena and Lesnar on the card.
+    URL         : https://www.espn.com/wwe/story/_/id/46307887/wwe-wrestlepalooza-john-cena-vs-brock-lesnar-first
+
+[4] Title       : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS...
+    Author      : Jason Kottke
+    Description : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS 26 / Liquid Glass is terrible: incoherent, ugly, and di
+    URL         : https://kottke.org/25/09/0047552-im-usually-pretty-go-with
+
+[5] Title       : Los jugadores de Warhammer 40K están construyendo sus naves en No Man's Sky y el resultado son bestialidades absurdas
+    Author      : Alberto Martín
+    Description : Nada escapa a la mirada de Warhammer 40K. Si algo existe, está en su universo y si algo de su universo puede llegar a otro, acaba llegando gracias a los fans. Así que nadie puede extrañarse de que la influencia del Emperador y el Imperio de la Humanidad se ha…
+    URL         : https://www.vidaextra.com/accion/jugadores-warhammer-40k-estan-construyendo-sus-naves-no-mans-sky-resultado-bestialidades-absurdas
+
+**************************** END ****************************
+
+--- PREVIOUS RESULTS ---
+
+**************************************************************
+Timestamp: 2025-09-22 02:18:35
+Results for: hello                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Say Hello to the 2025 Ig Nobel Prize Winners
+    Author      : Jennifer Ouellette, Ars Technica
+    Description : The annual award ceremony features miniature operas, scientific demos, and 24/7 lectures.
+    URL         : https://www.wired.com/story/say-hello-to-the-2025-ig-nobel-prize-winners/
+
+[2] Title       : Computer Has One Instruction, Many Transistors
+    Author      : Bryan Cockfield
+    Description : There’s always some debate around what style of architecture is best for certain computing applications, with some on the RISC side citing performance per watt and some on the CISC side citin…
+    URL         : https://hackaday.com/2025/09/20/computer-has-one-instruction-many-transistors/
+
+[3] Title       : WWE Wrestlepalooza live updates and results: John Cena vs. Brock Lesnar up first
+    Author      : ESPN Staff
+    Description : WWE heads to Indianapolis for its first Premium Live Event on ESPN Unlimited. Seth Rollins, Cody Rhodes and more join Cena and Lesnar on the card.
+    URL         : https://www.espn.com/wwe/story/_/id/46307887/wwe-wrestlepalooza-john-cena-vs-brock-lesnar-first
+
+[4] Title       : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS...
+    Author      : Jason Kottke
+    Description : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS 26 / Liquid Glass is terrible: incoherent, ugly, and di
+    URL         : https://kottke.org/25/09/0047552-im-usually-pretty-go-with
+
+[5] Title       : Los jugadores de Warhammer 40K están construyendo sus naves en No Man's Sky y el resultado son bestialidades absurdas
+    Author      : Alberto Martín
+    Description : Nada escapa a la mirada de Warhammer 40K. Si algo existe, está en su universo y si algo de su universo puede llegar a otro, acaba llegando gracias a los fans. Así que nadie puede extrañarse de que la influencia del Emperador y el Imperio de la Humanidad se ha…
+    URL         : https://www.vidaextra.com/accion/jugadores-warhammer-40k-estan-construyendo-sus-naves-no-mans-sky-resultado-bestialidades-absurdas
+
+**************************** END ****************************
+
+--- PREVIOUS RESULTS ---
+
+**************************************************************
+Timestamp: 2025-09-22 02:18:35
+Results for: hello                | Showing 5 articles | Source: Database
+**************************************************************
+
+[1] Title       : Say Hello to the 2025 Ig Nobel Prize Winners
+    Author      : Jennifer Ouellette, Ars Technica
+    Description : The annual award ceremony features miniature operas, scientific demos, and 24/7 lectures.
+    URL         : https://www.wired.com/story/say-hello-to-the-2025-ig-nobel-prize-winners/
+
+[2] Title       : Computer Has One Instruction, Many Transistors
+    Author      : Bryan Cockfield
+    Description : There’s always some debate around what style of architecture is best for certain computing applications, with some on the RISC side citing performance per watt and some on the CISC side citin…
+    URL         : https://hackaday.com/2025/09/20/computer-has-one-instruction-many-transistors/
+
+[3] Title       : WWE Wrestlepalooza live updates and results: John Cena vs. Brock Lesnar up first
+    Author      : ESPN Staff
+    Description : WWE heads to Indianapolis for its first Premium Live Event on ESPN Unlimited. Seth Rollins, Cody Rhodes and more join Cena and Lesnar on the card.
+    URL         : https://www.espn.com/wwe/story/_/id/46307887/wwe-wrestlepalooza-john-cena-vs-brock-lesnar-first
+
+[4] Title       : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS...
+    Author      : Jason Kottke
+    Description : I’m usually pretty go-with-the-flow as far as OS updates go, but iOS 26 / Liquid Glass is terrible: incoherent, ugly, and di
+    URL         : https://kottke.org/25/09/0047552-im-usually-pretty-go-with
+
+[5] Title       : Los jugadores de Warhammer 40K están construyendo sus naves en No Man's Sky y el resultado son bestialidades absurdas
+    Author      : Alberto Martín
+    Description : Nada escapa a la mirada de Warhammer 40K. Si algo existe, está en su universo y si algo de su universo puede llegar a otro, acaba llegando gracias a los fans. Así que nadie puede extrañarse de que la influencia del Emperador y el Imperio de la Humanidad se ha…
+    URL         : https://www.vidaextra.com/accion/jugadores-warhammer-40k-estan-construyendo-sus-naves-no-mans-sky-resultado-bestialidades-absurdas
+
+**************************** END ****************************
+

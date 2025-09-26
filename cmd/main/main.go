@@ -9,6 +9,7 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/abhijeet1999/NewsApp/pkg/controllers"
 	"github.com/abhijeet1999/NewsApp/pkg/models"
 	"github.com/abhijeet1999/NewsApp/pkg/routes"
 	"github.com/abhijeet1999/NewsApp/pkg/utils"
@@ -45,7 +46,7 @@ func main() {
 			continue
 		}
 
-		topic := strings.TrimSpace(items[0])
+		topic := strings.ToLower(strings.TrimSpace(items[0]))
 		days, _ := strconv.Atoi(strings.TrimSpace(items[1]))
 		count, _ := strconv.Atoi(strings.TrimSpace(items[2]))
 
@@ -55,6 +56,11 @@ func main() {
 		go func(topic string, days, count int) {
 			defer wg.Done()
 			defer func() { <-sem }()
+
+			// Get per-topic mutex to prevent concurrent processing of same topic
+			topicMutex := models.GetTopicMutex(topic)
+			topicMutex.Lock()
+			defer topicMutex.Unlock()
 
 			existing, _ := models.GetNewsBySearchKey(topic)
 			length := len(existing.Articles)
@@ -71,17 +77,13 @@ func main() {
 			// Fetch missing articles from API
 			newArticles := routes.GetNewsapi(topic, count, days, apiKey)
 
-			// Merge unique articles from API
-			urlMap := make(map[string]bool)
-			for _, a := range existing.Articles {
-				urlMap[a.URL] = true
-			}
+			// Use UPSERT approach - no need for manual deduplication
+			// The database UNIQUE constraints will handle duplicates
+			controllers.SaveNews(topic, newArticles.Articles)
 
-			for _, a := range newArticles.Articles {
-				if !urlMap[a.URL] {
-					existing.Articles = append(existing.Articles, a)
-				}
-			}
+			// Reload data after UPSERT to get accurate count
+			existing, _ = models.GetNewsBySearchKey(topic)
+			existing.SearchKey = topic
 
 			// Determine final count to print
 			finalCount := len(existing.Articles)
@@ -100,8 +102,6 @@ func main() {
 				source = "Combined"
 			}
 
-			// Always assign topic
-			existing.SearchKey = topic
 			results <- models.Result{Topic: topic, Data: existing, Count: finalCount, Source: source}
 
 		}(topic, days, count)

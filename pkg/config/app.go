@@ -1,8 +1,10 @@
 package config
 
 import (
+	"os"
+
 	"github.com/jinzhu/gorm"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
 )
 
 var (
@@ -10,7 +12,13 @@ var (
 )
 
 func Connect() {
-	d, err := gorm.Open("mysql", "root:palakkad@tcp(127.0.0.1:3306)/newsdb?charset=utf8&parseTime=True&loc=Local")
+	// Get database path from environment variable, default to local file
+	dbPath := os.Getenv("SQLITE_DB_PATH")
+	if dbPath == "" {
+		dbPath = "newsapp.db"
+	}
+
+	d, err := gorm.Open("sqlite3", dbPath)
 	if err != nil {
 		panic(err)
 	}
