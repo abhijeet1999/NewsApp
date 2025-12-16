@@ -243,3 +243,6 @@ docker-compose logs sqlite-db
 ## 📝 License
 
 This project is open source and available under the MIT License.
+
+# Note:
+This project was developed as part of the coursework for MSCS621: Cloud Computing at Marist University, instructed by Rasit Onur Topaloglu, Ph.D. The project specifications and requirements were provided as part of the course assignment.
